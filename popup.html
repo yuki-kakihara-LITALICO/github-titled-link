@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>GitHub Titled Link</h1>
+      <p class="description">GitHubのURLからタイトル付きリンクを作成</p>
+    </div>
+
+    <div class="input-section">
+      <label for="url-input">GitHub URL</label>
+      <div class="input-row">
+        <input type="text" id="url-input" placeholder="https://github.com/owner/repo/...">
+        <button id="fetch-btn" class="primary">取得</button>
+      </div>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+
+    <div id="result" class="result hidden">
+      <label>取得したタイトル</label>
+      <div class="result-card">
+        <div class="result-title" id="result-title"></div>
+        <div class="result-url" id="result-url"></div>
+      </div>
+      <div class="button-row">
+        <button id="copy-rich-btn" class="primary">リンクとしてコピー</button>
+        <button id="copy-md-btn">Markdownでコピー</button>
+      </div>
+      <p class="hint">「リンクとしてコピー」→ Google Docsに貼り付けるとリンクになります</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
