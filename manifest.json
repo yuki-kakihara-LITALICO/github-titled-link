@@ -23,8 +23,7 @@
     }
   },
   "content_scripts": [{
-    "matches": ["<all_urls>"],
-    "exclude_matches": ["https://github.com/*"],
+    "matches": ["https://docs.google.com/document/d/*"],
     "js": ["content.js"],
     "run_at": "document_idle"
   }],

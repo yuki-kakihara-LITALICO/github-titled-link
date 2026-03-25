@@ -1,5 +1,4 @@
 (() => {
-  if (location.hostname === "github.com") return;
 
   const GITHUB_URL_RE = /https?:\/\/github\.com\/[\w.-]+\/[\w.-]+[^\s<>"')\]},]*/g;
 
